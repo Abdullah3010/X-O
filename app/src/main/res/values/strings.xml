@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string-array name="players_Choices">
+        <item>X</item>
+        <item>O</item>
+    </string-array>
+</resources>

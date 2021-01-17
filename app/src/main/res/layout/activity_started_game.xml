@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/players"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/player_1_Name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:autoSizeMaxTextSize="50dp"
+            android:autoSizeMinTextSize="30dp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/current_player"
+            android:elevation="2dp"
+            android:fontFamily="@font/caveat_bold"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/player"
+            android:translationZ="10dp" />
+
+
+        <TextView
+            android:id="@+id/player_2_Name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:autoSizeMaxTextSize="50dp"
+            android:autoSizeMinTextSize="30dp"
+            android:autoSizeTextType="uniform"
+            android:elevation="2dp"
+            android:fontFamily="@font/caveat_bold"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/player"
+            android:translationZ="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scores"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/players"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/score_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border_right"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/player"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/score_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/player"
+            android:textSize="50dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scores"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/border_buttom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/a1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_right"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/player"
+                android:textSize="90dp" />
+
+            <TextView
+                android:id="@+id/a2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_right"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/player"
+                android:textSize="90dp" />
+
+            <TextView
+                android:id="@+id/a3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/player"
+                android:textSize="90dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/border_buttom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/b1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_right"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/player"
+                android:textSize="90dp" />
+
+            <TextView
+                android:id="@+id/b2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_right"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/player"
+                android:textSize="90dp" />
+
+            <TextView
+                android:id="@+id/b3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/player"
+                android:textSize="90dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/c1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_right"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/player"
+                android:textSize="90dp" />
+
+            <TextView
+                android:id="@+id/c2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_right"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/player"
+                android:textSize="90dp" />
+
+            <TextView
+                android:id="@+id/c3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/player"
+                android:textSize="90dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/game"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/newGame"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/newgame_button"
+            android:elevation="2dp"
+            android:padding="15dp"
+            android:text="New Game"
+            android:textColor="@color/player"
+            android:translationZ="8dp" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/newgame_button"
+            android:elevation="2dp"
+            android:padding="15dp"
+            android:text="Reset"
+            android:textColor="@color/player"
+            android:translationZ="8dp" />
+    </LinearLayout>
+
+</RelativeLayout>
